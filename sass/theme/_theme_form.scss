@@ -1,0 +1,201 @@
+/***********************************
+Theme Form Styles
+***********************************/
+
+.validation_error {
+  background:red;
+  color:$white;
+  padding:6px;
+}
+
+.gform_body {
+
+  .validation_message {
+    background:red;
+    color:$white;
+    padding:6px;
+  }
+
+  .gform_fields {
+    @include theme-flex;
+    @include theme-flex-flow(row, wrap);
+    @include theme-justify-align(center, space-between);
+    padding:0;
+
+    #field_2_7 {
+      flex-basis:100%;
+    }
+
+    #field_2_8 {
+      flex-basis:100%;
+    }
+
+
+    .gfield {
+      list-style-type: none;
+      flex-basis:49.5%;
+      margin-bottom:25px;
+
+      @media screen and (max-width:1023px) {
+        flex-basis:100%;
+      }
+
+      .gfield_label {
+        display:none;
+      }
+
+
+      input {
+        width:100%;
+        padding:8px;
+        outline-color:$primary-color !important;
+        border:2px solid $black;
+      }
+
+      textarea {
+        width:100%;
+        padding:8px;
+        outline-color:$primary-color !important;
+        border:2px solid $black;
+      }
+
+      select {
+        width:100%;
+        padding:8px;
+        background:$transparent;
+        outline-color:$primary-color !important;
+        border-radius:0px !important;
+        border:2px solid $black;
+
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+
+
+      }
+    }
+
+    #field_1_4 {
+      margin-bottom:0px;
+    }
+
+    #field_1_5 {
+      flex-basis:100%;
+      position: relative;
+
+      &::after {
+        content: "\f0dd";
+        font-family: "Font Awesome 5 Free";
+        color:$primary-color;
+        font-weight: 600;
+        font-size:24px;
+        height:auto;
+        position:absolute;
+        right:12px;
+        top:50%;
+        z-index:100;
+
+        transform:translateY(-60%);
+      }
+    }
+
+    #field_1_3 {
+      margin-bottom:0px;
+    }
+  }
+}
+
+.theme-trial-form {
+  padding:80px 0px;
+  text-align:left;
+  background:$primary-color;
+  color:$white;
+  background-size:cover !important;
+  background-position:center center !important;
+
+  h2 {
+    color:$white;
+  }
+
+  .gform_footer {
+    width:100%;
+    @include theme-flex;
+    @include theme-flex-flow(row, wrap);
+    @include theme-justify-align(center, center);
+
+    input {
+      width:100%;
+      border:0px;
+      background:$white;
+      color:$primary-color;
+      padding:8px;
+      font-weight:600;
+      text-transform:uppercase;
+      @include set-transition(300ms);
+
+      &:hover {
+        opacity:0.6;
+      }
+    }
+  }
+
+  #gform_fields_1 {
+    margin-bottom:0px;
+  }
+
+  .gfield {
+    input {
+      width:100%;
+      padding:8px;
+      outline-color:$primary-color !important;
+      border:2px solid $white !important;
+      background:transparent;
+
+      &::-webkit-input-placeholder { /* Edge */
+        color: $white;
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $white;
+      }
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+
+
+  .theme-btn-default {
+    text-transform:uppercase;
+    background:$white;
+    color:$primary-color;
+
+    &:hover {
+      background:$primary-color;
+      color:$white;
+    }
+  }
+}
+
+.gform_footer {
+  width:100%;
+  @include theme-flex;
+  @include theme-flex-flow(row, wrap);
+  @include theme-justify-align(center, center);
+
+  input {
+    width:100%;
+    border:0px;
+    background:$primary-color;
+    color:$white;
+    padding:8px;
+    font-weight:600;
+    text-transform:uppercase;
+    @include set-transition(300ms);
+
+    &:hover {
+      opacity:0.6;
+    }
+  }
+}

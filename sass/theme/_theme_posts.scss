@@ -1,0 +1,145 @@
+/***********************************
+Theme Posts Styles
+***********************************/
+
+.theme-posts-archive {
+
+  padding:0 0 60px 0;
+
+  h1 {
+    color:$secondary-color;
+    margin-bottom:12px;
+  }
+
+  .theme-post-card-image {
+    width:100%;
+    height:275px;
+    background:$grey;
+    background-size:cover !important;
+    background-position:center center !important;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom:18px;
+    }
+  }
+
+  .theme-date {
+    color:$primary-color;
+  }
+
+  .theme-post-entry {
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:2px solid $primary-color;
+
+    &:last-child {
+      border-bottom:0px;
+    }
+  }
+
+  h2 {
+    text-align:left;
+    margin-bottom:40px;
+  }
+
+  ul {
+    padding-left:40px;
+
+    li {
+      line-height:2.8em;
+
+      a {
+        font-size:24px;
+        font-weight:400;
+        text-decoration:none;
+        color:$black;
+
+        &:hover {
+          color:$primary-color;
+        }
+      }
+
+      .fa-caret-right {
+        color:$primary-color;
+        margin-left:12px;
+      }
+
+    }
+  }
+
+  .theme-faqs {
+    padding-top:60px;
+    padding-bottom:60px;
+
+    h2 {
+      font-size:50px;
+    }
+
+    h3 {
+      font-size:21px;
+      color:$black;
+    }
+  }
+
+}
+
+.theme-post-feed {
+  padding:60px 0;
+  position:relative;
+  overflow:hidden;
+
+
+  .theme-post-card-image {
+    width:100%;
+    height:200px;
+    background:$grey;
+  }
+
+  h2 {
+    text-align:center;
+  }
+
+  .theme-post-card {
+    @include theme-flex;
+    @include theme-flex-flow(row, wrap);
+
+  }
+}
+
+/***********************************
+Theme Single Posts Styles
+***********************************/
+
+.theme-single {
+  padding:20px 0 60px 0;
+
+  h1 {
+    color:$secondary-color;
+  }
+
+  .theme-date {
+    color: $primary-color;
+    margin-bottom:21px;
+    display:block;
+  }
+
+  .featured-image {
+    height:400px;
+    width:100%;
+    background-size:cover !important;
+    background-position:center center !important;
+    margin-bottom:24px;
+  }
+
+  .image {
+    width:100%;
+    height:auto;
+    background:$grey;
+
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+
+}

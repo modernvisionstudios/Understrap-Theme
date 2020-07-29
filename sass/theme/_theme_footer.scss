@@ -1,0 +1,111 @@
+/***********************************
+Default Footer
+***********************************/
+
+
+.theme-footer {
+  background:$white;
+  color:$grey;
+
+  #footer-menu {
+    padding:0px;
+    text-align:right;
+
+    @media screen and(max-width: 767px) {
+      text-align: center;
+    }
+
+    li {
+      list-style-type:none;
+
+      a {
+        color:$grey;
+        text-decoration:none;
+        font-weight:300;
+      }
+
+    }
+  }
+
+  .theme-footer-container {
+    padding:40px 0;
+    max-width:1200px;
+    margin:0 auto;
+  }
+
+  .theme-footer-social {
+    @include theme-flex;
+    @include theme-flex-flow(row, nowrap);
+    @include theme-justify-align(center, flex-end);
+    padding:0;
+    margin:0 auto 0 auto;
+
+    @media screen and(max-width: 767px){
+      margin:0 0 0 0;
+      width:100%;
+    }
+
+    li {
+      list-style-type:none;
+      margin-right:12px;
+      text-align:right;
+      font-weight:800;
+
+      &:first-child {
+        margin-right:12px;
+        color:$secondary-color;
+      }
+
+      &:last-child {
+        margin-right:0px;
+      }
+
+      a {
+        font-size:24px;
+        font-weight:normal;
+        color:$primary-color;
+
+        &:hover {
+          color:$grey;
+        }
+      }
+    }
+
+  }
+
+  .theme-footer-address {
+
+    text-align:left;
+
+    @media screen and(max-width: 767px){
+      text-align:center;
+    }
+
+    .footer-address-header {
+      font-weight:800;
+      margin-bottom:0px;
+      color:$secondary-color;
+    }
+
+    p {
+      font-weight:200;
+      margin-bottom:0px;
+    }
+
+  }
+
+  .theme-copyright {
+    text-align:right;
+    font-weight:300;
+
+    @media screen and(max-width: 767px){
+      width:100%;
+      display:block;
+      text-align:center;
+    }
+  }
+}
+
+.theme-trial-form-section {
+  background:$primary-color;
+}

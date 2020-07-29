@@ -1,0 +1,142 @@
+/***********************************
+Theme Flexible Content Section Styles
+***********************************/
+
+.theme-general-content {
+
+
+}
+
+.theme-list {
+
+}
+
+.theme-form {
+
+}
+
+.theme-gallery {
+
+  ul {
+
+    padding:0;
+    margin:0;
+
+    li {
+
+      list-style-type:none;
+      margin-bottom:30px;
+      cursor:pointer;
+
+      img {
+        width:100%;
+        height:auto;
+      }
+    }
+
+  }
+
+}
+
+.theme-contact-section {
+
+   iframe {
+     width:100%;
+   }
+
+   .theme-btn-default {
+     margin-bottom:25px;
+   }
+
+}
+
+.theme-banner {
+  background-size:cover !important;
+  background-position:center center !important;
+
+  h2 {
+    color:$white;
+  }
+
+  .theme-btn-default {
+    background:$white;
+    color:$primary-color;
+
+    &:hover {
+      background:$primary-color;
+      color:$white;
+    }
+  }
+
+}
+
+/***********************************
+Helper Classes
+***********************************/
+
+.flex-content-left {text-align:left;}
+.flex-content-center {text-align:center;}
+.flex-content-right {text-align:right;}
+
+.flex-padding-top {padding-top:60px;}
+.flex-padding-bottom {padding-bottom:60px;}
+
+.theme-default {
+
+  background:$white !important;
+
+  h2 {
+    color:$secondary-color !important;
+  }
+
+  p {
+    color:$black !important;
+  }
+
+}
+
+.theme-primary {
+
+  background:$primary-color !important;
+
+  h2 {
+    color:$white !important;
+  }
+
+  p {
+    color:$black !important;
+  }
+
+  .theme-btn-default {
+    background:$white;
+    color:$secondary-color;
+
+    &:hover {
+      background:$grey;
+      color:$white;
+    }
+  }
+}
+
+.theme-secondary {
+
+  background:$secondary-color !important;
+
+  h2 {
+    color:$white !important;
+  }
+
+  p {
+    color:$black !important;
+  }
+
+  .theme-btn-default {
+    background:$white;
+    color:$secondary-color;
+
+    &:hover {
+      background:$grey;
+      color:$white;
+    }
+  }
+}

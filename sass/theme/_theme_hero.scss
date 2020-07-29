@@ -1,0 +1,169 @@
+/***********************************
+Default Hero
+***********************************/
+
+.hero-default {
+
+  @include theme-flex;
+  @include theme-justify-align(center, center);
+  @include theme-flex-flow(row, nowrap);
+  height:90vh;
+  background:#aeaeae;
+  background-size:cover !important;
+  background-position:center center !important;
+
+  .hero-inner-container {
+    text-align:center;
+    max-width: 800px;
+    padding:0 3%;
+
+    h1 {
+      text-align:center;
+      margin-bottom:40px;
+      color:#ffffff !important;
+      text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+      font-size:48px;
+      font-weight:700;
+
+      @media screen and (max-width: 1023px) {
+        font-size:40px;
+      }
+
+
+      @media screen and (max-width: 500px) {
+        font-size:40px;
+        margin-bottom:20px;
+      }
+    }
+
+    p {
+      text-align:center;
+      color:$white;
+    }
+
+    .hero-btn-wrapper {
+
+      @include theme-flex;
+      flex-flow:row nowrap;
+      justify-content:space-between;
+      text-align: center;
+
+      @media screen and (max-width: 991px) {
+        @include theme-flex;
+        flex-flow:row wrap;
+        justify-content:center;
+        text-align: center;
+        max-width:600px;
+        margin:0 auto;
+      }
+
+      .theme-btn-default {
+        font-size:28px;
+        padding:12px 16px;
+        text-transform:uppercase;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+        width:fit-content;
+
+        &:last-child {
+          margin-right:0px;
+        }
+
+        @media screen and (max-width: 991px) {
+          margin-right:0px;
+          margin-bottom:14px;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size:24px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.hero-inner-page {
+
+  @include theme-flex;
+  @include theme-justify-align(center, flex-start);
+  @include theme-flex-flow(row, nowrap);
+  padding:60px 0;
+  background:$primary-color;
+  margin-bottom:60px;
+  background-size:cover !important;
+  background-position:center center;
+
+
+  h1, h2 {
+    text-align:left;
+    margin-bottom:24px;
+    color:#ffffff;
+  }
+
+  p {
+    text-align:left;
+    color:$white;
+  }
+
+  a {
+    color:$white;
+  }
+
+  .theme-btn-default {
+    font-size:28px;
+    padding:12px 16px;
+  }
+
+  .hero-inner-container {
+    text-align:left;
+  }
+
+}
+
+.hero-none {
+
+  @include theme-flex;
+  @include theme-justify-align(center, flex-start);
+  @include theme-flex-flow(row, nowrap);
+  background:$white;
+  margin-bottom:0px;
+
+  h1 {
+    margin-bottom:24px;
+    color:$secondary-color;
+    text-transform:none;
+  }
+
+  h2 {
+    margin-bottom:24px;
+  }
+
+  ul {
+    margin:30px 0px !important;
+
+    li {
+
+      ul {
+        margin:8px 0px !important;
+      }
+
+    }
+  }
+
+  .hero-inner-container {
+    text-align:left;
+
+    h2 {
+      text-align:left;
+      margin-bottom:36px !important;
+      color:$white;
+    }
+
+    p {
+      text-align:left;
+    }
+
+  }
+
+}

@@ -1,0 +1,54 @@
+/***********************************
+Flex Box Mixins
+***********************************/
+
+
+@mixin theme-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin theme-flex-flow($rowType, $wrapType) {
+  flex-flow: $rowType $wrapType;
+}
+
+@mixin theme-justify-align($alignPos, $justifyPos) {
+  justify-content: $justifyPos;
+  align-items: $alignPos;
+}
+
+
+/***********************************
+Animation Mixins
+***********************************/
+
+
+@mixin set-transition($speed) {
+  -ms-transition:all $speed ease-in-out;
+  -o-transition:all $speed ease-in-out;
+  -moz-transition:all $speed ease-in-out;
+  -webkit-transition:all $speed ease-in-out;
+  transition:all $speed ease-in-out;
+}
+
+
+@mixin set-animation($name, $duration, $fillDirection, $ease, $iteration, $delay, $playState) {
+   animation-name: $name;
+   animation-duration: $duration;
+   animation-fill-mode: $fillDirection;
+   animation-timing-function: $ease;
+   animation-iteration-count: $iteration;
+   animation-delay: $delay;
+   animation-play-state: $playState;
+}
+
+/***********************************
+Utility Mixins
+***********************************/
+
+@mixin set-btn-color($bgColor, $textColor) {
+  color:$textColor;
+  background:$bgColor;
+}

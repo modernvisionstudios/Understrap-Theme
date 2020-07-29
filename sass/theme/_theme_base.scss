@@ -1,0 +1,119 @@
+/***********************************
+Theme Base Styles
+***********************************/
+body {
+  margin:0;
+  padding:0;
+  text-rendering: optimizeLegibility;
+
+}
+
+h1 {
+  font-size:48px;
+  font-weight:700;
+  font-family:$heading-font;
+  text-transform:uppercase;
+
+  @media screen and (max-width: 1024px) {
+    font-size:40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size:36px;
+  }
+}
+
+h2 {
+  font-size:36px;
+  font-weight:800;
+  font-family:$heading-font;
+  text-transform:uppercase;
+  color:$secondary-color;
+  margin-bottom:20px;
+
+  @media screen and (max-width: 1024px) {
+    font-size:38px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size:24px;
+  }
+}
+
+h3 {
+  font-size:36px;
+  font-weight:800;
+  font-family:$heading-font;
+  color:$secondary-color;
+
+
+  @media screen and (max-width: 1024px) {
+    font-size:32px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size:21px;
+  }
+}
+
+h4 {
+  font-size:24px;
+  font-weight:700;
+  font-family:$heading-font;
+}
+
+h5 {
+  font-size:18px;
+  font-weight:700;
+  font-family:$heading-font;
+}
+
+h6 {
+  font-size:14px;
+  font-weight:700;
+  font-family:$heading-font;
+}
+
+p {
+  font-size:16px;
+  font-family:$text-font;
+
+  @media screen and (max-width: 500px) {
+    font-size:16px;
+  }
+}
+
+a {
+  @include set-btn-color(NULL, $secondary-color);
+  @include set-transition(300ms);
+  font-weight:600;
+  text-decoration:underline;
+
+  &:hover {
+    @include set-btn-color(NULL, $grey);
+    text-decoration:none;
+  }
+}
+
+ul {
+  padding:0 0 0 30px;
+}
+
+/***********************************
+Theme Button Styles
+***********************************/
+
+.theme-btn-default {
+  @include set-btn-color($primary-color, $white);
+  @include set-transition(300ms);
+  display:inline-block;
+  padding:8px 12px;
+  font-weight:600;
+  text-transform:uppercase;
+  font-family:$heading-font;
+  text-decoration:none;
+
+  &:hover {
+    @include set-btn-color($secondary-color, $white);
+  }
+}
